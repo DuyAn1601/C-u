@@ -67,8 +67,7 @@
 	<div id="fh5co-page">
 		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
-			
-		<nav id="fh5co-main-menu" role="navigation">
+			<nav id="fh5co-main-menu" role="navigation">
 				<div class="head-nav">
 					<h4 class="head-nav-altteam"> ALT TEAM </h4>
 					<hr class="head-nav-hr">
@@ -78,14 +77,29 @@
 					<p class="head-nav-email">dpthao251@gmail.com</p>
 				</div>
 				<div class="fh5co-main-menu-nav">NAVIGATION</div>
-				<ul>
-					<li class="fh5co-active"><a href="./adminHome.html">Home</a></li>
-					<li><a href="#">Report</a></li>
-					<li><a href="#">Setting</a></li>
-					<li><a href="#">As a client</a></li>
-					<li><a href="#">Logout</a></li>
+				<ul class="fh5co-main-menu-nav-ul">
+						<li class="fh5co-main-menu-nav-item">
+						<i class="fas fa-home"></i>
+						<a href="./adminHome.html">Home</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-file-alt"></i>
+							<a class ="vaccine-regis" href="#">Report</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-cog"></i>
+							<a class="fh5co-main-menu-nav-white" href="#" >Setting</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-share-square"></i>
+							<a class="fh5co-main-menu-nav-white" href="./home.html" >As a client</a>
+						</li>
+						<li class="login-pls fh5co-main-menu-nav-item">
+							<i class="color-white-pls fas fa-sign-out-alt"></i>
+							<a href="#" class="fh5co-main-menu-logout">Logout</a>
+						</li>
 				</ul>
-			</nav>	
+			</nav>
 
 			<div class="fh5co-footer">
 				<a class="fh5co-footer-help"href="">Need help?</a>
@@ -95,8 +109,8 @@
 				</div>
 			</div>
 		</aside>
-        <div id="fh5co-main">
-			<div class="fh5co-narrow-content">
+        <div id="fh5co-main" data-animate-effect="fadeInLeft">
+			<div class="fh5co-narrow-content" data-animate-effect="fadeInLeft">
 				<div class="fh5co-header">
 					<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">VACCINE REGISTRATION</h2>
 					<div class="fh5co-heading-search"> 
@@ -127,22 +141,22 @@
 					<table  class="vaccine-table-reg vaccine-table" data-animate-effect="fadeInLeft">
 						<tr  class="vaccine-table-color" data-animate-effect="fadeInLeft">
 							<th>
-								Mã công dân
+								CitizenID
 							</th>
 							<th>
-								Mã tiền sử bệnh
+								AnamnessisID
 							</th>
 							<th>
-								Đồng ý
+								Agreement
 							</th>
 							<th>
-								Mũi tiêm
+								ChoiceInjections
 							</th>
 							<th>
-								Ngày đăng ký
+								DateOfRegistration
 							</th>
 							<th>
-								Trạng thái		
+								Status		
 							</th>
 							<th>    
 							   
@@ -173,7 +187,7 @@
 								<i class="delete-real fas fa-trash"></i>
 							</td>
 						</tr>
-						<tr  class="vaccine-table-row">
+						<tr  class="vaccine-table-row" data-animate-effect="fadeInLeft">
 							<td>070365201036</td>
 							<td>ana00312</td>
 							<td>yes</td>
@@ -185,7 +199,7 @@
 								<i class="delete-real fas fa-trash"></i>
 							</td>
 						</tr>
-						<tr  class="vaccine-table-row">
+						<tr  class="vaccine-table-row" data-animate-effect="fadeInLeft">
 							<td>070365201036</td>
 							<td>ana00312</td>
 							<td>yes</td>
@@ -197,7 +211,7 @@
 								<i class="delete-real fas fa-trash"></i>
 							</td>
 						</tr>
-						<tr  class="vaccine-table-row">
+						<tr  class="vaccine-table-row" data-animate-effect="fadeInLeft">
 							<td>070365201036</td>
 							<td>ana00312</td>
 							<td>yes</td>
@@ -214,8 +228,8 @@
             </div>
         </div>
 		<div id="fh5co-main">
-			<div class="fh5co-narrow-content-2">
-                <div class="fh5co-head-edit">
+			<div class="fh5co-narrow-content-2" data-animate-effect="fadeInLeft">
+                <div class="fh5co-head-edit" data-animate-effect="fadeInLeft">
                     <span>Edit</span>
                     <span>Please edit your vaccine registration !!</span>
                 </div>
@@ -226,46 +240,49 @@
 						</div>
 						<div class="fh5co-body-edit-vaccine">
 							<div class="fh5co-body-edit-row">
-								<span>Mã công dân</span>
+								<span>CitizenID</span>
+								<select name="Citizen" id="Citizen" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023264</option>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023254</option>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023244</option>
+								</select>
+							</div>
+							<div class="fh5co-body-edit-row">
+								<span>AnamnessisID</span>
 								<div class="fh5co-body-edit-item">
 									<input type="text" placeholder="Enter value" value="">
 									<i class="fas fa-pen"></i>
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Mã tiền sử bệnh</span>
-								<div class="fh5co-body-edit-item">
-									<input type="text" placeholder="Enter value" value="">
-									<i class="fas fa-pen"></i>
-								</div>
+								<span>Agreement</span>
+								<select name="Citizen" id="Citizen" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >No</option>
+								</select>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Đồng ý</span>
-								<div class="fh5co-body-edit-item">
-									<input type="text" placeholder="Enter value" value="">
-									<i class="fas fa-pen"></i>
-								</div>
+								<span>ChoiceInjections</span>
+								<select name="ChoiceInjections" id="ChoiceInjections" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="choiceinjections" class="vaccine-registration-vaccination-sl-opt" >1</option>
+									<option value="choiceinjections" class="vaccine-registration-vaccination-sl-opt" >2</option>
+									<option value="choiceinjections" class="vaccine-registration-vaccination-sl-opt" >3</option>
+									<option value="choiceinjections" class="vaccine-registration-vaccination-sl-opt" >4</option>
+								</select>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Mũi tiêm</span>
-								<div class="fh5co-body-edit-item">
-									<input type="text" placeholder="Enter value" value="">
-									<i class="fas fa-pen"></i>
-								</div>
-							</div>
-							<div class="fh5co-body-edit-row">
-								<span>Ngày đăng ký</span>
+								<span>DateOfRegistration</span>
 								<div class="edit-health-delaration fh5co-body-edit-item">
 									<input type="date" placeholder="Enter value" value="">
 									
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Trạng thái</span>
-								<div class="fh5co-body-edit-item">
-									<input type="text" placeholder="Enter value" value="">
-									<i class="fas fa-pen"></i>
-								</div>
+								<span>Status</span>
+								<select name="Agreement" id="Agreement" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="agreement" class="vaccine-registration-vaccination-sl-opt" >Done</option>
+									<option value="agreement" class="vaccine-registration-vaccination-sl-opt" >Wait</option>
+								</select>
 							</div>
 							
 						</div>
@@ -293,42 +310,48 @@
 						</div>
 						<div class="fh5co-body-create-vaccine" data-animate-effect="fadeInLeft">
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Mã công dân</span>
-								<div class="fh5co-body-create-item" >
-									<input type="text" placeholder="Enter value" value="">
-								</div>
+								<span>CitizenID</span>
+								<select name="Citizen" id="Citizen" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023264</option>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023254</option>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023244</option>
+								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Mã tiền sử bệnh</span>
+								<span>AnamnessisID</span>
 								<div class="fh5co-body-create-item">
 									<input type="text" placeholder="Enter value" value="">										
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Đồng ý</span>
-								<div class="fh5co-body-create-item">
-									<input type="text" placeholder="Enter value" value="">
-								</div>
+								<span>Agreement</span>
+								<select name="Agreement" id="Agreement" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="agreement" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
+									<option value="agreement" class="vaccine-registration-vaccination-sl-opt" >No</option>
+								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Mũi tiêm</span>
-								<div class="fh5co-body-create-item">
-									<input type="text" placeholder="Enter value" value="">
-								</div>
+								<span>ChoiceInjections</span>
+								<select name="ChoiceInjections" id="ChoiceInjections" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="choiceinjections" class="vaccine-registration-vaccination-sl-opt" >1</option>
+									<option value="choiceinjections" class="vaccine-registration-vaccination-sl-opt" >2</option>
+									<option value="choiceinjections" class="vaccine-registration-vaccination-sl-opt" >3</option>
+									<option value="choiceinjections" class="vaccine-registration-vaccination-sl-opt" >4</option>
+								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Ngày đăng ký</span>
+								<span>DateOfRegistration</span>
 								<div class="fh5co-body-create-item">
 									<input type="date" placeholder="Enter value" value="">
 									
 								</div>
 							</div>
 							<div class="fh5co-body-create-row">
-								<span>Trạng thái</span>
-								<div class="fh5co-body-create-item">
-									<input type="text" placeholder="Enter value">
-									
-								</div>
+								<span>Status</span>
+								<select name="Agreement" id="Agreement" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="agreement" class="vaccine-registration-vaccination-sl-opt" >Done</option>
+									<option value="agreement" class="vaccine-registration-vaccination-sl-opt" >Wait</option>
+								</select>
 							</div>
 							
 						</div>
@@ -358,12 +381,27 @@
 					Are you sure you want to delete this?
 				</div>
 				<div class="vaccine-delete-text">
-					<span>Ward</span>
-					<span>Phường 1</span>
+					<span>Registration</span>
+					<span>070365201036</span>
 				</div>
 				<div class="vaccine-delete-button-1">
 					<button class="out-cancel-vaccine" >Cancel</button>
 					<button>Delete</button>
+				</div>
+			</div>
+		</div>
+		<div class="vaccine-delete-wrapper logout-right-now">
+			<div class="vaccine-delete logout-right-now-pls" data-animate-effect="fadeInLeft">
+				<div class="vaccine-delete-header">
+					<span>Logout</span>
+					<i class=" out-delete-vaccine out-logout-vaccine fas fa-times"></i>
+				</div>
+				<div class="vaccine-delete-question">
+					Are you sure you want to logout?
+				</div>
+				<div class="vaccine-delete-button-1">
+					<button class="out-cancel-vaccine out-cancel-logout" >Cancel</button>
+					<button><a href="./home.html">Logout</a></button>
 				</div>
 			</div>
 		</div>

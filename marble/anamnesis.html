@@ -55,6 +55,8 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
+	<link rel="stylesheet" href="./css/SignIn.css">
+
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -67,8 +69,7 @@
 	<div id="fh5co-page">
 		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
-			
-		<nav id="fh5co-main-menu" role="navigation">
+			<nav id="fh5co-main-menu" role="navigation">
 				<div class="head-nav">
 					<h4 class="head-nav-altteam"> ALT TEAM </h4>
 					<hr class="head-nav-hr">
@@ -78,14 +79,29 @@
 					<p class="head-nav-email">dpthao251@gmail.com</p>
 				</div>
 				<div class="fh5co-main-menu-nav">NAVIGATION</div>
-				<ul>
-					<li class="fh5co-active"><a href="./adminHome.html">Home</a></li>
-					<li><a href="#">Report</a></li>
-					<li><a href="#">Setting</a></li>
-					<li><a href="#">As a client</a></li>
-					<li><a href="#">Logout</a></li>
+				<ul class="fh5co-main-menu-nav-ul">
+						<li class="fh5co-main-menu-nav-item">
+						<i class="fas fa-home"></i>
+						<a href="./adminHome.html">Home</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-file-alt"></i>
+							<a class ="vaccine-regis" href="#">Report</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-cog"></i>
+							<a class="fh5co-main-menu-nav-white" href="#" >Setting</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-share-square"></i>
+							<a class="fh5co-main-menu-nav-white" href="./home.html" >As a client</a>
+						</li>
+						<li class="login-pls fh5co-main-menu-nav-item">
+							<i class="color-white-pls fas fa-sign-out-alt"></i>
+							<a href="#" class="fh5co-main-menu-logout">Logout</a>
+						</li>
 				</ul>
-			</nav>	
+			</nav>
 
 			<div class="fh5co-footer">
 				<a class="fh5co-footer-help"href="">Need help?</a>
@@ -98,7 +114,7 @@
         <div id="fh5co-main" data-animate-effect="fadeInLeft" >
 			<div class="fh5co-narrow-content">
 				<div class="fh5co-header">
-					<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">VACCINATION</h2>
+					<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">ANAMNESIS</h2>
 					<div class="fh5co-heading-search"> 
 						<i class="fas fa-search"></i>
 						<input class="fh5co-heading-search-put animate-box" type="text" placeholder="Search" data-animate-effect="fadeInLeft">
@@ -127,54 +143,58 @@
 					<table  class="vaccine-table-anamnesis vaccine-table" data-animate-effect="fadeInLeft">
 						<tr  class="vaccine-table-color" data-animate-effect="fadeInLeft">
 							<th>
-								Sốc phản vệ
+								Anaphylaxis
 							</th>
 							<th>
-								Khả năng miễn dịch thấp
+								Low Immunity
 							</th>
 							<th>
-								Dị ứng
+								Acute Illness
 							</th>
 							<th>
-								Trên 65 tuổi
+								Allergy
 							</th>
 							<th>
-								Đang mang thai
+								Older
 							</th>
 							<th>
-								Rối loạn đông máu	
+								Pregnancy
 							</th>
 							<th>
-								Dùng chất kích thích	
+								Blood Disorder
 							</th>
 							<th>
-								Bệnh mãn tính phát triển	
+								Use Inhibition
 							</th>
 							<th>
-								Khỏi bệnh mãn tính	
+								Develop Chronic
 							</th>
 							<th>
-								Đã tiêm 14 ngày
+								Cured Chronic
 							</th>
 							<th>
-								Mắc covid trong vòng 6 tháng
+								Vaccineed Half Month
+							</th>
+							<th>
+								Covid Six Months
 							</th>
 							<th>    
 							   
 							</th>
 						</tr>
 						<tr  class="vaccine-table-row" data-animate-effect="fadeInLeft">
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
 							<td>
 								<i class="edit-real fas fa-pen"></i></a>
 								<i class="delete-real fas fa-trash"></i>
@@ -182,68 +202,72 @@
 							
 						</tr>
 						<tr  class="vaccine-table-row" data-animate-effect="fadeInLeft">
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>yes</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
 							<td>
 								<i class="edit-real fas fa-pen"></i></a>
 								<i class="delete-real fas fa-trash"></i>
 							</td>
 						</tr>
 						<tr  class="vaccine-table-row">
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>unknown</td>
-							<td>no</td>
-							<td>no</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
 							<td>
 								<i class="edit-real fas fa-pen"></i></a>
 								<i class="delete-real fas fa-trash"></i>
 							</td>
 						</tr>
 						<tr  class="vaccine-table-row">
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
 							<td>
 								<i class="edit-real fas fa-pen"></i></a>
 								<i class="delete-real fas fa-trash"></i>
 							</td>
 						</tr>
 						<tr  class="vaccine-table-row">
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
 							<td>
 								<i class="edit-real fas fa-pen"></i></a>
 								<i class="delete-real fas fa-trash"></i>
@@ -266,7 +290,7 @@
 						</div>
 						<div class="fh5co-body-edit-vaccine">
 							<div class="fh5co-body-edit-row">
-								<span>Sốc phản vệ</span>
+								<span>Anaphylaxis</span>
 									<select name="Vaccination" id="Vaccination" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
 										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -274,7 +298,7 @@
 									</select>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Khả năng miễn dịch thấp</span>
+								<span>Low Immunity</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -282,7 +306,7 @@
 								</select>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Dị ứng</span>
+								<span>Acute Illness</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -290,7 +314,7 @@
 								</select>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Trên 65 tuổi</span>
+								<span>Allergy</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -298,7 +322,7 @@
 								</select>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Đang mang thai</span>
+								<span>Older</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -306,7 +330,7 @@
 								</select>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Rối loạn đông máu</span>
+								<span>Pregnancy</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -314,7 +338,7 @@
 								</select>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Dùng chất kích thích</span>
+								<span>Blood Disorder</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -322,7 +346,7 @@
 								</select>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Bệnh mãn tính phát triển</span>
+								<span>Use Inhibition</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -330,7 +354,7 @@
 								</select>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Khỏi bệnh mãn tính</span>
+								<span>Develop Chronic</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -338,7 +362,7 @@
 								</select>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Đã tiêm 14 ngày</span>
+								<span>Cured Chronic</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -346,7 +370,15 @@
 								</select>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Mắc covid trong vòng 6 tháng</span>
+								<span>Vaccineed Half Month</span>
+								<select name="Vaccination" id="Vaccination" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
+									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
+									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Unknown</option>
+								</select>
+							</div>
+							<div class="fh5co-body-edit-row">
+								<span>Covid Six Months</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -378,8 +410,7 @@
 						</div>
 						<div class="fh5co-body-create-vaccine" data-animate-effect="fadeInLeft">
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Sốc phản vệ</span>
-								
+								<span>Anaphylaxis</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-create-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -388,7 +419,7 @@
 								
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Khả năng miễn dịch thấp</span>
+								<span>Low Immunity</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-create-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -396,7 +427,7 @@
 								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Dị ứng</span>
+								<span>Acute Illness</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-create-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -404,7 +435,7 @@
 								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Trên 65 tuổi</span>
+								<span>Allergy</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-create-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -412,7 +443,7 @@
 								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Đang mang thai</span>
+								<span>Older</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-create-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -420,7 +451,7 @@
 								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Rối loạn đông máu</span>
+								<span>Pregnancy</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-create-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -428,7 +459,7 @@
 								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Dùng chất kích thích</span>
+								<span>Blood Disorder</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-create-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -436,7 +467,7 @@
 								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Bệnh mãn tính phát triển</span>
+								<span>Use Inhibition</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-create-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -444,7 +475,7 @@
 								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Khỏi bệnh mãn tính</span>
+								<span>Develop Chronic</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-create-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -452,7 +483,7 @@
 								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Đã tiêm 14 ngày</span>
+								<span>Cured Chronic</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-create-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -460,7 +491,15 @@
 								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Mắc covid trong 6 tháng</span>
+								<span>Vaccineed Half Month</span>
+								<select name="Vaccination" id="Vaccination" class="fh5co-body-create-item-select vaccine-registration-vaccination-sl" required>
+									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
+									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
+									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Unknown</option>
+								</select>	
+							</div>
+							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
+								<span>Covid Six Months</span>
 								<select name="Vaccination" id="Vaccination" class="fh5co-body-create-item-select vaccine-registration-vaccination-sl" required>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
 									<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >No</option>
@@ -494,8 +533,8 @@
 					Are you sure you want to delete this?
 				</div>
 				<div class="vaccine-delete-text">
-					<span>Ward</span>
-					<span>Phường 1</span>
+					<span>Anamnesis</span>
+					<span>1</span>
 				</div>
 				<div class="vaccine-delete-button-1">
 					<button class="out-cancel-vaccine" >Cancel</button>
@@ -503,6 +542,22 @@
 				</div>
 			</div>
 		</div>
+		<div class="vaccine-delete-wrapper logout-right-now">
+			<div class="vaccine-delete logout-right-now-pls" data-animate-effect="fadeInLeft">
+				<div class="vaccine-delete-header">
+					<span>Logout</span>
+					<i class=" out-delete-vaccine out-logout-vaccine fas fa-times"></i>
+				</div>
+				<div class="vaccine-delete-question">
+					Are you sure you want to logout?
+				</div>
+				<div class="vaccine-delete-button-1">
+					<button class="out-cancel-vaccine out-cancel-logout" >Cancel</button>
+					<button><a href="./home.html">Logout</a></button>
+				</div>
+			</div>
+		</div>
+		
 
 		
 

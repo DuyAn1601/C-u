@@ -67,9 +67,8 @@
 	<div id="fh5co-page">
 		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
-			
-		<nav id="fh5co-main-menu" role="navigation">
-				<div class="head-nav" data-animate-effect="fadeInLeft" >
+			<nav id="fh5co-main-menu" role="navigation">
+				<div class="head-nav">
 					<h4 class="head-nav-altteam"> ALT TEAM </h4>
 					<hr class="head-nav-hr">
 					<img class="head-nav-img" alt="logo" src="./images/injection-blood-medicine-care-treatment-hospital-recovery-36121.png"> 
@@ -78,14 +77,29 @@
 					<p class="head-nav-email">dpthao251@gmail.com</p>
 				</div>
 				<div class="fh5co-main-menu-nav">NAVIGATION</div>
-				<ul>
-					<li class="fh5co-active"><a href="./adminHome.html">Home</a></li>
-					<li><a href="#">Report</a></li>
-					<li><a href="#">Setting</a></li>
-					<li><a href="#">As a client</a></li>
-					<li><a href="#">Logout</a></li>
+				<ul class="fh5co-main-menu-nav-ul">
+						<li class="fh5co-main-menu-nav-item">
+						<i class="fas fa-home"></i>
+						<a href="./adminHome.html">Home</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-file-alt"></i>
+							<a class ="vaccine-regis" href="#">Report</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-cog"></i>
+							<a class="fh5co-main-menu-nav-white" href="#" >Setting</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-share-square"></i>
+							<a class="fh5co-main-menu-nav-white" href="./home.html" >As a client</a>
+						</li>
+						<li class="login-pls fh5co-main-menu-nav-item">
+							<i class="color-white-pls fas fa-sign-out-alt"></i>
+							<a href="#" class="fh5co-main-menu-logout">Logout</a>
+						</li>
 				</ul>
-			</nav>	
+			</nav>
 
 			<div class="fh5co-footer">
 				<a class="fh5co-footer-help"href="">Need help?</a>
@@ -124,49 +138,49 @@
 							</select>
 						</div>
 					</div>
-					<table  class="vaccine-table-health vaccine-table" data-animate-effect="fadeInLeft">
+					<table  class="vaccine-table-citizen vaccine-table" data-animate-effect="fadeInLeft">
 						<tr  class="vaccine-table-color" data-animate-effect="fadeInLeft">
 							<th>
-								CMND
+								CitizenID
 							</th>
 							<th>
-								Họ và tên
+								FullName
 							</th>
 							<th>
-								Giới tính
+								Gender
 							</th>
 							<th>
-								Ngày sinh
+								DateOfBirth
 							</th>
 							<th>
-								SĐT	
+								Phone number
 							</th>
 							<th>
 								Email	
 							</th>
 							<th>
-								Mã BHYT	
+								Health Insurance
 							</th>
 							<th>    
-								Nghề nghiệp
+								Job/Work
 							</th>
 							<th>    
-								Đơn vị công tác
+								Company/WorkLocation
 							</th>
 							<th>    
-								Dân tộc
+								Nation
 							</th>
 							<th>    
-								Quốc tịch
+								Nationality
 							</th>
 							<th>    
-								Tỉnh/ thành phố
+								Province/City
 							</th>
 							<th>    
-								Quận/ huyện
+								District
 							</th>
 							<th>    
-								Xã/ phường/ thị trấn
+								Ward
 							</th>
 							<th>
 
@@ -298,28 +312,29 @@
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Họ và tên</span>
+								<span>FullName</span>
 								<div class="fh5co-body-edit-item">
 									<input type="text" placeholder="Enter value" value="">
 									<i class="fas fa-pen"></i>
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Giới tính</span>
-								<div class="fh5co-body-edit-item">
-									<input type="text" placeholder="Enter value" value="">
-									<i class="fas fa-pen"></i>
-								</div>
+								<span>Gender</span>
+								<select name="Gender" id="Gender" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="Gender" class="vaccine-registration-vaccination-sl-opt" >Nam</option>
+									<option value="Gender" class="vaccine-registration-vaccination-sl-opt" >Nữ</option>
+									<option value="Gender" class="vaccine-registration-vaccination-sl-opt" >Khác</option>
+								</select>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Ngày sinh</span>
+								<span>DateOfBirth</span>
 								<div class="edit-health-delaration fh5co-body-edit-item">
 									<input type="date" placeholder="Enter value" value="">
 									
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>SĐT</span>
+								<span>Phone number</span>
 								<div class="fh5co-body-edit-item">
 									<input type="number" placeholder="Enter number" value="" min="0">
 									
@@ -333,60 +348,65 @@
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Mã BHYT</span>
+								<span>Health Insurance</span>
 								<div class="fh5co-body-edit-item">
 									<input type="text" placeholder="Enter value" value="">
 									<i class="fas fa-pen"></i>
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Nghề nghiệp</span>
+								<span>Job/Work</span>
 								<div class="fh5co-body-edit-item">
 									<input type="text" placeholder="Enter value" value="">
 									<i class="fas fa-pen"></i>
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Đơn vị công tác</span>
+								<span>Company/WorkLocation</span>
 								<div class="fh5co-body-edit-item">
 									<input type="text" placeholder="Enter value" value="">
 									<i class="fas fa-pen"></i>
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Dân tộc</span>
-								<div class="fh5co-body-edit-item">
-									<input type="text" placeholder="Enter value" value="">
-									<i class="fas fa-pen"></i>
-								</div>
+								<span>Nation</span>
+								<select name="Nation" id="Nation" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="Nation" class="vaccine-registration-vaccination-sl-opt" >Kinh</option>
+									<option value="Nation" class="vaccine-registration-vaccination-sl-opt" >Ê-đê</option>
+									<option value="Nation" class="vaccine-registration-vaccination-sl-opt" >Thái</option>
+								</select>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Quốc tịch</span>
-								<div class="fh5co-body-edit-item">
-									<input type="text" placeholder="Enter value" value="">
-									<i class="fas fa-pen"></i>
-								</div>
+								<span>Nationality</span>
+								<select name="Nationality" id="Nationality" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="Nationality" class="vaccine-registration-vaccination-sl-opt" >Việt Nam</option>
+									<option value="Nationality" class="vaccine-registration-vaccination-sl-opt" >Lào</option>
+									<option value="Nationality" class="vaccine-registration-vaccination-sl-opt" >Campuchia</option>
+								</select>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Tỉnh/ thành phố</span>
-								<div class="fh5co-body-edit-item">
-									<input type="text" placeholder="Enter value" value="">
-									<i class="fas fa-pen"></i>
-								</div>
+								<span>City/Province</span>
+								<select name="City/Province" id="City/Province" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="City/Province" class="vaccine-registration-vaccination-sl-opt" >Trà Vinh</option>
+									<option value="City/Province" class="vaccine-registration-vaccination-sl-opt" >TP.Hồ Chí Minh</option>
+									<option value="City/Province" class="vaccine-registration-vaccination-sl-opt" >Bến Tre</option>
+								</select>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Quận/ huyện</span>
-								<div class="fh5co-body-edit-item">
-									<input type="text" placeholder="Enter value" value="">
-									<i class="fas fa-pen"></i>
-								</div>
+								<span>District</span>
+								<select name="District" id="District" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="District" class="vaccine-registration-vaccination-sl-opt" >Gò Vấp</option>
+									<option value="District" class="vaccine-registration-vaccination-sl-opt" >Bình Thạnh</option>
+									<option value="District" class="vaccine-registration-vaccination-sl-opt" >Phú Nhuận</option>
+								</select>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Xã/ phường/ thị trấn</span>
-								<div class="fh5co-body-edit-item">
-									<input type="text" placeholder="Enter value" value="">
-									<i class="fas fa-pen"></i>
-								</div>
+								<span>Ward</span>
+								<select name="Ward" id="Ward" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="Ward" class="vaccine-registration-vaccination-sl-opt" >1</option>
+									<option value="Ward" class="vaccine-registration-vaccination-sl-opt" >2</option>
+									<option value="Ward" class="vaccine-registration-vaccination-sl-opt" >3</option>
+								</select>
 							</div>
 						</div>
 					</div>
@@ -419,25 +439,27 @@
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Họ và tên</span>
+								<span>FullName</span>
 								<div class="fh5co-body-create-item">
 									<input type="text" placeholder="Enter value" value="">								
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Giới tính</span>
-								<div class="fh5co-body-create-item">
-									<input type="text" placeholder="Enter value" value="">
-								</div>
+								<span>Gender</span>
+								<select name="DateOfBirth" id="DateOfBirth" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="DateOfBirth" class="vaccine-registration-vaccination-sl-opt" >Nam</option>
+									<option value="DateOfBirth" class="vaccine-registration-vaccination-sl-opt" >Nữ</option>
+									<option value="DateOfBirth" class="vaccine-registration-vaccination-sl-opt" >Khác</option>
+								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Ngày sinh</span>
+								<span>DateOfBirth</span>
 								<div class="fh5co-body-create-item">
 									<input type="date" placeholder="Enter date" value="">
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>SĐT</span>
+								<span>Phone number</span>
 								<div class="fh5co-body-create-item">
 									<input type="number" placeholder="Enter number" value="" min="0">
 								</div>
@@ -449,52 +471,62 @@
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Mã BHYT</span>
+								<span>Health Insurance</span>
 								<div class="fh5co-body-create-item">
 									<input type="text" placeholder="Enter value" value="">									
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Nghề nghiệp</span>
+								<span>Job/Work</span>
 								<div class="fh5co-body-create-item">
 									<input type="text" placeholder="Enter value" value="">
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Đơn vị công tác</span>
+								<span>Company/WorkLocation</span>
 								<div class="fh5co-body-create-item">
 									<input type="text" placeholder="Enter value" value="">
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Tỉnh/ thành phố</span>
-								<div class="fh5co-body-create-item">
-									<input type="text" placeholder="Enter value" value="">
-								</div>
+								<span>Nation</span>
+								<select name="Nation" id="Nation" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="Nation" class="vaccine-registration-vaccination-sl-opt" >Kinh</option>
+									<option value="Nation" class="vaccine-registration-vaccination-sl-opt" >Ê-đê</option>
+									<option value="Nation" class="vaccine-registration-vaccination-sl-opt" >Thái</option>
+								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Quận/ huyện</span>
-								<div class="fh5co-body-create-item">
-									<input type="text" placeholder="Enter value" value="">
-								</div>
+								<span>Nationality</span>
+								<select name="Nationality" id="Nationality" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="Nationality" class="vaccine-registration-vaccination-sl-opt" >Việt Nam</option>
+									<option value="Nationality" class="vaccine-registration-vaccination-sl-opt" >Lào</option>
+									<option value="Nationality" class="vaccine-registration-vaccination-sl-opt" >Campuchia</option>
+								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Xã/ phường/ thị trấn</span>
-								<div class="fh5co-body-create-item">
-									<input type="text" placeholder="Enter value" value="">
-								</div>
+								<span>City/Province</span>
+								<select name="City/Province" id="City/Province" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="City/Province" class="vaccine-registration-vaccination-sl-opt" >Trà Vinh</option>
+									<option value="City/Province" class="vaccine-registration-vaccination-sl-opt" >TP.Hồ Chí Minh</option>
+									<option value="City/Province" class="vaccine-registration-vaccination-sl-opt" >Bến Tre</option>
+								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Dân tộc</span>
-								<div class="fh5co-body-create-item">
-									<input type="text" placeholder="Enter value" value="">
-								</div>
+								<span>District</span>
+								<select name="District" id="District" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="District" class="vaccine-registration-vaccination-sl-opt" >Gò Vấp</option>
+									<option value="District" class="vaccine-registration-vaccination-sl-opt" >Bình Thạnh</option>
+									<option value="District" class="vaccine-registration-vaccination-sl-opt" >Phú Nhuận</option>
+								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Quốc tịch</span>
-								<div class="fh5co-body-create-item">
-									<input type="text" placeholder="Enter value" value="">
-								</div>
+								<span>Ward</span>
+								<select name="Ward" id="Ward" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="Ward" class="vaccine-registration-vaccination-sl-opt" >1</option>
+									<option value="Ward" class="vaccine-registration-vaccination-sl-opt" >2</option>
+									<option value="Ward" class="vaccine-registration-vaccination-sl-opt" >3</option>
+								</select>
 							</div>
 						</div>
 					</div>
@@ -523,12 +555,27 @@
 					Are you sure you want to delete this?
 				</div>
 				<div class="vaccine-delete-text">
-					<span>Ward</span>
-					<span>Phường 1</span>
+					<span>Citizen</span>
+					<span>079201023264</span>
 				</div>
 				<div class="vaccine-delete-button-1">
 					<button class="out-cancel-vaccine" >Cancel</button>
 					<button>Delete</button>
+				</div>
+			</div>
+		</div>
+		<div class="vaccine-delete-wrapper logout-right-now">
+			<div class="vaccine-delete logout-right-now-pls" data-animate-effect="fadeInLeft">
+				<div class="vaccine-delete-header">
+					<span>Logout</span>
+					<i class=" out-delete-vaccine out-logout-vaccine fas fa-times"></i>
+				</div>
+				<div class="vaccine-delete-question">
+					Are you sure you want to logout?
+				</div>
+				<div class="vaccine-delete-button-1">
+					<button class="out-cancel-vaccine out-cancel-logout" >Cancel</button>
+					<button><a href="./home.html">Logout</a></button>
 				</div>
 			</div>
 		</div>
