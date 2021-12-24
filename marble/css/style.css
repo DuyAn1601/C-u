@@ -1330,8 +1330,8 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 .create-vaccine-filter{
   display: flex;
   align-items: center;
-  width: 290px;
-  justify-content: space-between;
+  
+  
 }
 .create-vaccine-filter-number{
   font-size: 16px;
@@ -1346,6 +1346,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   align-items: center;
   justify-content: space-between;
   width: 48px;
+  margin-right:10px;
 }
 .create-vaccine-filter-num {
   display: inline-block;
@@ -3370,3 +3371,9 @@ a:hover,a:focus{
 .vaccine-delete-button-1 button a {
   color:white;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
